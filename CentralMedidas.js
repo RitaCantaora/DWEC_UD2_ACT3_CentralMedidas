@@ -61,15 +61,15 @@ class CentralMedidas {
 }
 
     central = new CentralMedidas();
-central.insertaMedidas("Santander",[5, -6, -10, 40, 31, 1, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6, 10, 40, 31, -1, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6]);
+central.insertaMedidas("Santander",[5, 6, -10, 40, 31, 14, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6, 10, 40, 31, -1, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6]);
 central.insertaMedidas("Oviedo", [5, -6, 10, 40, 31, 1, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6, 10, 40, 31, -1, 23, 12, 14, 23, 40, 10, 29, 34, 5, 6]);
 central.insertaAleatorio("Madrid");
 
 console.log("Temperatura media en Santander:", central.mediaMedidas("Santander"));
-console.log("Temperatura media en Madrid:", central.mediaMedidas("Madrid"));
-console.log("Temperatura media total:", central.mediaMedidasTotal());
-console.log("Eliminar Madrid:", central.eliminaCiudad("Madrid"));
-console.log( central.medidas);
+console.log("Temperatura media en Madrid:",central.mediaMedidas("Madrid"));
+console.log("Temperatura media total:",central.mediaMedidasTotal());
+console.log("Eliminar Madrid:",central.eliminaCiudad("Madrid"));
+console.table( central.medidas);
 
 
 
