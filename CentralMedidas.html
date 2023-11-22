@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="CentralMedidas.js"></script>
-    <title>Central de Medidas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CentralMedidad.css">
+  <script src="CentralMedidas.js"></script>
+  <title>Central de Medidas</title>
+  <style>
+
+  </style>
 </head>
+
 <body>
+  <div id="tabla"></div>
+
+  <h1>Control Temperaturas</h1>
+
+  <form id="miFormulario">
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required><br><br>
+    <p class="mesajeError" id="errorCiudadExiste">La ciudad ya exixte</p>
+    <p class="mesajeError" id="errorMedida">Medida Erronea</p>
+    <p class="mesajeError" id="errorCiudad">La ciudad no existe </p>
+    <p class="mensajeAviso" id="temperatura-media"></p>
+
+    <label for="media">Media:</label>
+    <input type="text" id="media" size="50" name="media" required><br><br>
     
+
+    <input type="radio" id="manual" name="tipo" value="manual" checked onchange="boton()"> <label
+      for="manual">Manual</label>
+    <input type="radio" id="aleatorio" name="tipo" value="aleatorio" onchange="boton()"> <label
+      for="aleatorio">Aleatorio</label><br><br>
+
+
+
+    <button type="button" onclick="botonGuardar()">Guardar</button>
+    <button type="button" onclick="botonBorrar()">Borrar</button>
+  </form>
+
 </body>
+
+</html>
+
+
+</body>
+
 </html>

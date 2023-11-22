@@ -1,0 +1,16 @@
+.mesajeError {
+    border: 4px solid #660000;
+    background-color: #996666;
+    color: #660000;
+    padding: 30px;
+    width: 200px ;
+    display: none;
+  }
+
+  .mensajeAviso {
+    border: 4px solid #000066;
+    background-color: #666699;
+    color: #000066;
+    padding: 30px;
+    width: 200px ;
+  }
